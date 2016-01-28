@@ -3,7 +3,7 @@ module Lita
     class Oops < Lita::Handler
       include LoadBingo
 
-      route(/出包|理由|oops/i, :oops, command: true, help: {
+      route(/出包|理由|oops/i, :oops, command: false, help: {
         t("help.oops_key") => t("help.oops_value")
       })
 

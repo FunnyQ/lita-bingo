@@ -3,7 +3,7 @@ module Lita
     class Designer < Lita::Handler
       include LoadBingo
 
-      route(/設計師|designer/i, :designer, command: true, help: {
+      route(/設計師|designer/i, :designer, command: false, help: {
         t("help.designer_key") => t("help.designer_value")
       })
 

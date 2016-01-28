@@ -3,7 +3,7 @@ module Lita
     class Engineer < Lita::Handler
       include LoadBingo
 
-      route(/工程師|engineer|凹/i, :engineer, command: true, help: {
+      route(/工程師|engineer|凹/i, :engineer, command: false, help: {
         t("help.engineer_key") => t("help.engineer_value")
       })
 

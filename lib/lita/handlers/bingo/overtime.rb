@@ -3,7 +3,7 @@ module Lita
     class Overtime < Lita::Handler
       include LoadBingo
 
-      route(/加班|overtime/i, :overtime, command: true, help: {
+      route(/加班|overtime/i, :overtime, command: false, help: {
         t("help.overtime_key") => t("help.overtime_value")
       })
 
